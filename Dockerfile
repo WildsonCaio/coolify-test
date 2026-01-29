@@ -37,4 +37,4 @@ RUN python manage.py migrate
 EXPOSE 8000
 
 # Run the application
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["gunicorn", "coolify_project.wsgi:application", "--bind", "0.0.0.0:8000"]
