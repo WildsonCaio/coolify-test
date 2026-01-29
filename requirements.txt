@@ -3,3 +3,5 @@ djangorestframework>=3.14,<4.0
 asgiref>=3.7
 sqlparse>=0.4
 tzdata
+gunicorn>=21.2
+
